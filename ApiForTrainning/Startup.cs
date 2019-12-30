@@ -2,8 +2,15 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiForTraining.Domain.Entidades.Genericos;
+using ApiForTraining.Domain.Interfaces.Produtos;
+using ApiTraining.Aplicacao.Aplicacoes;
+using ApiTraining.Aplicacao.Interface;
+using ApiTraining.Infra.Repositorio.Generico;
+using ApiTraining.Infra.Repositorio.Produtos;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -23,8 +30,23 @@ namespace ApiForTrainning
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
+            services.Configure<CookiePolicyOptions>(options =>
+            {
+                // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+                options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
+            });
+
+
             services.AddControllersWithViews();
+
+            services.AddSingleton(typeof(InterfaceGenerica<>), typeof(RepositorioGenerico<>));
+            services.AddSingleton<InterfaceProduto, RepositorioProduto>();
+            services.AddSingleton<InterfaceProdutoApp, ProdutoApp>();
+
         }
+    
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

@@ -25,7 +25,7 @@ namespace ApiForTraining.Infra.Configuracao
 
         private string GetStringConnectionConfig()
         {
-            string strCon = "DData Source=(localdb)\\MSSQLLocalDB;" +
+            string strCon = "Data Source=(localdb)\\MSSQLLocalDB;" +
                 "Initial Catalog=db_ApiTraining;Integrated Security=True;" +
                 "Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;" +
                 "ApplicationIntent=ReadWrite;MultiSubnetFailover=False";

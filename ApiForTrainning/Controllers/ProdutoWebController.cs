@@ -39,11 +39,12 @@ namespace ApiForTrainningWeb.Controllers
         // POST: ProdutoWeb/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Produto collection)
         {
             try
             {
                 // TODO: Add insert logic here
+                ProdutoApp.Adicionar(collection);
 
                 return RedirectToAction(nameof(Index));
             }
@@ -62,11 +63,12 @@ namespace ApiForTrainningWeb.Controllers
         // POST: ProdutoWeb/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(int id, Produto collection)
         {
             try
             {
                 // TODO: Add update logic here
+                ProdutoApp.Atualizar(collection);
 
                 return RedirectToAction(nameof(Index));
             }
@@ -79,18 +81,18 @@ namespace ApiForTrainningWeb.Controllers
         // GET: ProdutoWeb/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(ProdutoApp.ObterPorId(id));
         }
 
         // POST: ProdutoWeb/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, Produto collection)
         {
             try
             {
-                // TODO: Add delete logic here
 
+                ProdutoApp.Excluir(collection);
                 return RedirectToAction(nameof(Index));
             }
             catch
