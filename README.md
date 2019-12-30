@@ -7,7 +7,7 @@ Aplicação desenvolvida usando método DDD em aspNetCore 3.1
 </h3>
 
 ### Dúvidas ou Contribuições?
-- Search for [existing GitHub issues](https://github.com/nfers/ApiForTraining/issues)
+- Procure por [existe issues no GitHub](https://github.com/nfers/ApiForTraining/issues)
 
 ## .NetCore
 | Version     | 
