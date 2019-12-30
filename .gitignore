@@ -1,0 +1,21 @@
+
+# Object files
+
+*.dll
+*.so
+.vs/
+bin/
+bin/Debug/
+obj/
+
+
+# Executables
+*.exe
+
+# Debug files
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+
