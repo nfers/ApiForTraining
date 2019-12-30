@@ -1,9 +1,9 @@
-﻿using ApiTraining.Infra.Repositorio.Generico;
+﻿using ApiForTraining.Domain.Entidades;
+using ApiForTraining.Domain.Interfaces.Produtos;
+using ApiTraining.Infra.Repositorio.Generico;
 using System;
 using System.Collections.Generic;
 using System.Text;
-using ApiTraining.Domain.Entidades;
-using ApiTraining.Domain.Interfaces.Produtos;
 
 namespace ApiTraining.Infra.Repositorio.Produtos
 {

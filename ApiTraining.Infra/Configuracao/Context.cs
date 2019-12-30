@@ -1,10 +1,10 @@
-﻿using ApiTraining.Domain.Entidades;
+﻿using ApiForTraining.Domain.Entidades;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApiTraining.Infra.Configuracao
+namespace ApiForTraining.Infra.Configuracao
 {
     public class Context : DbContext
     {

@@ -1,5 +1,5 @@
-﻿using ApiTraining.Domain.Entidades.Genericos;
-using ApiTraining.Infra.Configuracao;
+﻿using ApiForTraining.Domain.Entidades.Genericos;
+using ApiForTraining.Infra.Configuracao;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -1,6 +1,6 @@
-﻿using ApiTraining.Aplicacao.Interface;
-using ApiTraining.Domain.Entidades;
-using ApiTraining.Domain.Interfaces.Produtos;
+﻿using ApiForTraining.Domain.Entidades;
+using ApiForTraining.Domain.Interfaces.Produtos;
+using ApiTraining.Aplicacao.Interface;
 using System;
 using System.Collections.Generic;
 using System.Text;

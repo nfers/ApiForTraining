@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace ApiTraining.Domain.Entidades.Genericos
+namespace ApiForTraining.Domain.Entidades.Genericos
 {
     public interface InterfaceGenerica<T> where T : class
     {

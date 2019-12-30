@@ -1,4 +1,4 @@
-﻿using ApiTraining.Domain.Entidades;
+﻿using ApiForTraining.Domain.Entidades;
 using System;
 using System.Collections.Generic;
 using System.Text;
